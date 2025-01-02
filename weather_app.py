@@ -24,17 +24,17 @@ else:
     lo_temp = round(data.json()['main']['temp_min'])
 
     if weather == "Clouds":
-        print(f"The weather in {city_name} is {temp} and there are {weather} in the sky.")
+        print(f"The weather in {city_name} is {temp}° and there are {weather} in the sky.")
     else:
-        print(f"The weather in {city_name} is {temp} and the sky is {weather}.")
+        print(f"The weather in {city_name} is {temp}° and the sky is {weather}.")
 
-    print(f"However, it feels more like {feels_temp}.")
+    print(f"However, it feels more like {feels_temp}°.")
 
     choice = input("Would you like to know the low and high for today? Y or N ")
 
     if choice == "Y" or choice == "y":
-        print(f"The low for today is {lo_temp}")
-        print(f"The high for today is {hi_temp}")
+        print(f"The low for today is {lo_temp}°.")
+        print(f"The high for today is {hi_temp}°.")
         print("Thanks for using!")
 
     else:
